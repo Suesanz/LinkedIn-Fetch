@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.0.17",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "passport": "^0.4.0",
+    "passport-linkedin-oauth2": "^1.5.0"
+  },
+  "scripts": {
+    "start": "start npm run start:client && start npm run start:server",
+    "start:client": "react-scripts start",
+    "start:server": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3232",
+  "engines": {
+    "node": "8.9",
+    "npm": "5"
+  }
+}

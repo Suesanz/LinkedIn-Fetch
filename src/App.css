@@ -1,0 +1,154 @@
+.App {
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+#card1{
+    width: 20cm;
+    height: 25cm;
+    background-color: #027AB7;
+    border: solid #027AD9;
+}
+#card {
+    width: 20cm;
+    height: 25cm;
+    background-color: #2C3E50;
+    border: solid #992B02;
+}
+
+.card:hover {
+    border: solid #027AC9;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 30cm;
+    }
+}
+
+body {
+    background-image: url("https://wallpapersite.com/images/wallpapers/surface-1920x1080-triangles-hd-13260.jpg");
+}
+
+#main-div {
+    margin-left: 24%;
+    margin-top: 2%;
+    font-family: 'Roboto Slab', serif;
+}
+#title1{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 5em;
+    text-align: center;
+    color: #2C3E50;
+    margin-bottom: 1cm;
+    text-decoration-line: underline;
+    text-decoration-color: #2C3E50;
+    text-decoration-style: double;
+}
+#title {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 5em;
+    text-align: center;
+    color: #F16051;
+    margin-bottom: 1cm;
+    text-decoration-line: underline;
+    text-decoration-color: #F16060;
+    text-decoration-style: double;
+
+}
+
+/*#input {*/
+/*border-bottom-color: #F16051;*/
+/*font-size: 2em;*/
+/*color: #F16060;*/
+/*}*/
+
+.btn-large:hover {
+    background-color: #2C3E99
+}
+
+.btn-large, .btn-large:after {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 7.7cm;
+
+    background-color: #2C3E50;
+}
+
+#others {
+    margin-left: 3.5cm;
+    font-size: 2em;
+    /*margin-top: 2cm;*/
+    color: #2C3E80;
+    /*font-family: 'Abel', sans-serif;*/
+
+}
+#img{
+    width: 450px;
+    height: 300px;
+}
+
+#url {
+    width: 180px;
+    height: 180px;
+    line-height: 2cm;
+    margin-left: 7.3cm;
+    border-radius: 10%;
+}
+
+#name {
+    font-size: 1.9em;
+    line-height: 2cm;
+    margin-left: 7.2cm;
+    margin-top: 1cm;
+
+    color: #F16060;
+}
+
+#email, #industry {
+    display: inline-block;
+    /*margin-left: 7.7cm;*/
+    /*margin-bottom: 1cm;*/
+    /*margin-top: 1cm;*/
+    font-size: 1.5em;
+    line-height: 1.5cm;
+    color: #F16060;
+}
+#headline{
+    font-size: 1.5em;
+    line-height: 1cm;
+    margin-left: 7cm;
+    /*margin-bottom: 2cm;*/
+
+    color: #F16060;
+}
+em{
+ text-decoration-line:underline ;
+    color: #0008;
+}
+#a{
+    color: #0008;
+    line-height: 5cm;
+    margin-left: 7cm;
+    font-size: 1.5em;
+    text-decoration-line: underline;
+}
+#sum {
+    color: #F16060;
+
+    margin-bottom: 1cm;
+    margin-top: 2.5cm;
+    font-size: 1.5em;
+    line-height: 1.3cm;
+}
+
+@media screen and (max-width: 992px) {
+    .row {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        width: 100%;
+    }
+}
