@@ -3,7 +3,7 @@ const express = require('express')
     , LinkedinStrategy = require('passport-linkedin-oauth2').Strategy;
 const config = require('./config')
 const session = require('express-session')
-
+const path = require('path')
 const LINKEDIN_CLIENT_ID = config.client_id;
 const LINKEDIN_CLIENT_SECRET = config.client_secret;
 let fname = ""
@@ -70,7 +70,7 @@ app.get('/auth/linkedin',
 app.get('/auth/linkedin/callback',
     passport.authenticate('linkedin', {failureRedirect: ':https://linkedin-fetch.heroku.com'}),
     function (req, res) {
-        res.redirect('http://127.0.0.1:3000/login');
+        res.redirect('https://linkedin-fetch.herokuapp.com/login');
     });
 //
 
@@ -80,7 +80,7 @@ app.get('/profile', (req, res) => {
         {firstName: fname, lastName: lname},
         {Email: emails, headline: headline},
         {industry: industry, summary: summary},
-        {url:url}
+        {url: url}
     ];
     res.json(customers);
 });
