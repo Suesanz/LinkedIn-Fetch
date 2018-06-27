@@ -68,9 +68,9 @@ app.get('/auth/linkedin',
     });
 
 app.get('/auth/linkedin/callback',
-    passport.authenticate('linkedin', {failureRedirect: ':https://linkedin-fetch.com'}),
+    passport.authenticate('linkedin', {failureRedirect: ':https://linkedin-fetch.heroku.com'}),
     function (req, res) {
-        res.redirect('https://linkedin-fetch.com/login');
+        res.redirect('https://linkedin-fetch.herokuapp.com/login');
     });
 //
 
@@ -84,6 +84,13 @@ app.get('/profile', (req, res) => {
     ];
     res.json(customers);
 });
+if (process.env.NODE_ENV === 'production') {
+    // Set static folder
+    app.use(express.static('client/build'));
 
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+}
 
 app.listen(config.PORT);
