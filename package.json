@@ -25,7 +25,7 @@
   },
   "proxy": "http://localhost:3232",
   "engines": {
-    "node": "8.9",
-    "npm": "5"
+    "node": "^8.9",
+    "npm": "^5"
   }
 }
