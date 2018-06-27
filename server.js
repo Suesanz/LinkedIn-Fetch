@@ -70,7 +70,7 @@ app.get('/auth/linkedin',
 app.get('/auth/linkedin/callback',
     passport.authenticate('linkedin', {failureRedirect: ':https://linkedin-fetch.heroku.com'}),
     function (req, res) {
-        res.redirect('https://linkedin-fetch.herokuapp.com/login');
+        res.redirect('http://127.0.0.1:3000/login');
     });
 //
 
