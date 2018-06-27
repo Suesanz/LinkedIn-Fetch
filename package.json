@@ -16,9 +16,9 @@
     "passport-linkedin-oauth2": "^1.5.0"
   },
   "scripts": {
-    "start": "start npm run client ",
-    "client": "react-scripts start",
-
+    "start": "start npm run start:client && start npm run start:server",
+    "start:client": "react-scripts start",
+    "start:server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
