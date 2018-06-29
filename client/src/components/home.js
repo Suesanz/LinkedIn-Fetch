@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import '../App.css';
-import './home.css'
-class Home extends Component {
+import '../css/App.css';
+import '../css/home.css'
 
+class Home extends Component {
     render() {
         return (
             <div className="App" id="main-div">
@@ -16,13 +16,12 @@ class Home extends Component {
                             <p></p><p></p>To fetch LinkedIn details<p></p> just click on the Login Button Below.
                         </div>
                         <a className="btn-large waves-effect waves-light"
-                           href="https://linkedin-fetch.herokuapp.com/auth/linkedin">Login</a>
+                           href="http://localhost:3232/auth/linkedin">Login</a>
                     </div>
                 </div>
             </div>
         )
     }
-
 }
 
 export default Home

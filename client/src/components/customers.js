@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../App.css';
+import '../css/App.css';
 import axios from 'axios'
 
 class Customers extends Component {
@@ -27,23 +27,18 @@ class Customers extends Component {
                 const industry = res.data[2].industry
                 const url = res.data[3].url
                 const headline = res.data[1].headline
-                // console.log(res.data[1].Email)
 
                 this.setState({
-                    fname, lname, emails, summary, industry, url,headline
+                    fname, lname, emails, summary, industry, url, headline
                 })
             })
-        // .then(customers => this.setState({customers}, () => console.log('Customers fetched...', customers)));
+
     }
 
     render() {
         return (
             <div>
-                {/*<h2>Dashboard</h2>*/}
-
                 <div className="App" id="main-div">
-
-
                     <div className="row">
                         <div className="col s12 m6">
                             <div className="card" id={"card"}>
@@ -66,16 +61,12 @@ class Customers extends Component {
 
                                     <span id={"sum"}><em>Summary :  </em> {this.state.summary}</span>
                                     <p></p>
-                                    <a id ={"a"} href={"/"}>Go to HomePage</a>
+                                    <a id={"a"} href={"/"}>Go to HomePage</a>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         );
     }
